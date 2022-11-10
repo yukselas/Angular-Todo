@@ -1,6 +1,5 @@
-import { Component, Input, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Todo } from '../shared/todo.model';
-import tippy from 'tippy.js';
 
 @Component({
   selector: 'app-todo-item',
@@ -14,19 +13,15 @@ export class TodoItemComponent implements OnInit {
   @Output() editClicked: EventEmitter<void> = new EventEmitter()
   @Output() deleteClicked: EventEmitter<void> =  new EventEmitter()
 
-  @ViewChild('editBtn') editBtnElRef: ElementRef<HTMLElement>
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(): void {
- //console.log(this.editBtnElRef.nativeElement)
- tippy(this.editBtnElRef.nativeElement, {
-  content: 'Test Tooltip'
- })
-  }
+//   ngAfterViewInit(): void {
+  //console.log(this.editBtnElRef.nativeElement)
+
+//   }
 
   onTodoClicked() {
   this.todoClicked.emit()

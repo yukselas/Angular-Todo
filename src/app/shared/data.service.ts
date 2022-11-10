@@ -7,8 +7,8 @@ import { Todo } from './todo.model';
 export class DataService {
 
   todos: Todo[] = [
-    new Todo('this is a text',true),
-    new Todo(' Build a complete application using Angular! In this in-depth tutorial we will implement a modern User Interface and cover many other interesting topics such as component interaction, Angular Forms and displaying modal dialogs', false)
+  //  new Todo('this is a text',true),
+  //  new Todo(' Build a complete application using Angular! In this in-depth tutorial we will implement a modern User Interface and cover many other interesting topics such as component interaction, Angular Forms and displaying modal dialogs', false)
   ]
 
   constructor() { }
